@@ -4,6 +4,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import NotFound from './pages/NotFound';
 import Header from './components/Header';
+import './App.css';
 
 
 function App() {
