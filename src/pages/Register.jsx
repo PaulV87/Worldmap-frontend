@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
+import { server } from '../config/production';
 
 
 function Register() {
@@ -19,7 +20,7 @@ function Register() {
         passwordVerify,
       };
 
-      await axios.post("http://localhost:5000/auth/", registerData, {withCredentials: "True", Credentials: 'include'});
+      await axios.post(`${server}/auth/`, registerData, {withCredentials: "True", Credentials: 'include'});
       
       setEmail("")
       setPassword("")

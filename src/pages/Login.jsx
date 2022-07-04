@@ -2,6 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 import Spinner from "../components/Spinner";
 import { useNavigate, } from 'react-router-dom';
+import { server } from '../config/production';
 
 
 function Login() {
@@ -19,7 +20,7 @@ function Login() {
         password,       
       };
 
-      const res = await axios.post("http://localhost:5000/auth/login", loginData, {withCredentials: "True", Credentials: 'include'});
+      const res = await axios.post(`${server}/auth/login`, loginData, {withCredentials: "True", Credentials: 'include'});
 
       console.log(res);
       
