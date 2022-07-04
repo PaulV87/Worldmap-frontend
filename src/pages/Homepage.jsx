@@ -7,6 +7,7 @@ function Homepage() {
     <div>
       <h1>Homepage</h1>
       <button onClick={()=> navigate("/login")} >Login Page</button>
+      <button onClick={()=> navigate("/register")} >Register Page</button>
     
     </div>
   )

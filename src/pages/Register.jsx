@@ -8,7 +8,7 @@ function Register() {
   const [password, setPassword] = useState("");
   const [passwordVerify, setPasswordVerify] = useState("");
   
-
+  console.log(server)
 
   async function register(e) {
     e.preventDefault();
@@ -19,7 +19,7 @@ function Register() {
         password,
         passwordVerify,
       };
-      console.log(server)
+      
       await axios.post(`${server}/auth/`, registerData, {withCredentials: "True", Credentials: 'include'});
       
       setEmail("")
