@@ -19,7 +19,7 @@ function Register() {
         password,
         passwordVerify,
       };
-
+      console.log(server)
       await axios.post(`${server}/auth/`, registerData, {withCredentials: "True", Credentials: 'include'});
       
       setEmail("")
