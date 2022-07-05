@@ -41,12 +41,14 @@ function Login() {
         <input
           type="email"
           placeholder="Email"
+          autoComplete="off"
           onChange={(e) => setEmail(e.target.value)}
           value={email}
         />
         <input
           type="password"
           placeholder="Password"
+          autoComplete="off"
           onChange={(e) => setPassword(e.target.value)}
           value={password}
         />        

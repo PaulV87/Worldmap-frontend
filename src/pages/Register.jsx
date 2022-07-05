@@ -6,9 +6,7 @@ import { server } from '../config/production';
 function Register() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [passwordVerify, setPasswordVerify] = useState("");
-  
-  console.log(server)
+  const [passwordVerify, setPasswordVerify] = useState("");  
 
   async function register(e) {
     e.preventDefault();
