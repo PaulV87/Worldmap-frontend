@@ -1,13 +1,18 @@
-import React from 'react'
+import {useState} from 'react'
 import { useNavigate, } from 'react-router-dom';
+import Worldmap from '../components/Worldmap';
 
 function Homepage() {
+  const [state, setState] = useState("Hover over a country to see it's name")
   const navigate = useNavigate();
   return (
     <div>
       <h1>Homepage</h1>
-      <button onClick={()=> navigate("/login")} >Login Page</button>
-      <button onClick={()=> navigate("/register")} >Register Page</button>
+      <div>
+        {state}
+      </div>
+        <Worldmap setState={setState} />
+     
     
     </div>
   )

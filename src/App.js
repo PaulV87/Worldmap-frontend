@@ -14,10 +14,10 @@ function App() {
         <div className="container">
           <Header />
           <Routes>
-            <Route path='/' element={<Homepage />} />
+            <Route exact path='/' element={<Homepage />} />
             <Route path='/login' element={<Login />} />
             <Route path='/register' element={<Register />} />   
-            <Route path='*' element={<NotFound />} />         
+            <Route path='/*' element={<NotFound />} />         
           </Routes>
         </div>
       </Router>
@@ -28,3 +28,4 @@ function App() {
 }
 
 export default App;
+

@@ -1,3 +1,6 @@
+body{
+  background-color:#dae1e4 ;
+}
 .nav-container {
   display: flex;
   flex-direction: row;
@@ -41,7 +44,8 @@
   background-color: #dae1e4;
   display: flex;  
   justify-content: center;
-  height: 100vh
+  height: 100%;
+  
 }
 
 .form-container {
@@ -66,3 +70,49 @@
   border: 2px black solid
 }
 
+
+
+.map {  
+  height: 75vh;
+  width: 100vw;
+  background-color: #89b7f8;
+  overflow: hidden;
+}
+
+.map-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  height: 3rem;
+  background-color: yellow;
+  width: 100vw;
+  height: 75vh;
+}
+
+svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/*
+.map {
+position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1976d2;
+}
+
+.map-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;    
+  position: relative;
+  height: 0;
+  width: 80%;
+  padding-bottom: 50%;
+  background-color: #008e81;
+}->
+*/
